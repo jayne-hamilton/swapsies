@@ -1,21 +1,22 @@
-import '../styles/globals.css'
+import '../styles/main.css'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Nav from '../components/Nav/Nav'
+
 
 
 
 function MyApp({ Component, pageProps }: AppProps) {
   return <>
-  <Head>
-  <title>Swapsies</title>
-  <meta name="description" content="House swap app" />
-  <link rel="icon" href="/favicon.ico" />
-  </Head>
-  <Component {...pageProps} />
-  <footer className={styles.footer}>
-       
-  </footer>
+    <Head>
+      <title>Swapsies</title>
+      <meta name="description" content="House swap app" />
+      <link rel="icon" href="/favicon.ico" />
+    </Head>
+    <Nav />
+    <Component {...pageProps} />
+    
+    <footer/>
   </>
 }
 

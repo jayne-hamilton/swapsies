@@ -1,0 +1,349 @@
+* {
+  margin:0;
+  padding:0;
+  font-family:Arial, Helvetica, sans-serif
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 5px 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
+/* <------- NAV BAR inc LOGO --------> */
+
+.logo {
+  margin-left: 70px;
+}
+
+.logo a {
+  color:white;
+  text-decoration: none;
+  font-size: 24pt;
+  /* margin-left: 50px; */
+}
+
+
+nav {
+  display: flex;
+  justify-content:  space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: rgb(34, 34, 74);
+  color: white;
+  text-decoration: none;
+  font-size: 15pt;
+}
+
+.nav-links {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+  padding-left: 40px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+ul{
+  line-height: 2;
+}
+
+/* <------- HOME PAGE - HERO --------> */
+
+
+.hero-section {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./images/global.jpg");
+  background-size:contain;
+  background-color: white;
+  /* background-color: black; */
+
+  background-repeat: no-repeat;
+  /* opacity: 0.8; */
+}
+
+.hero-container {
+  width: 77%;
+  height: 700px;
+  margin: auto;
+  padding-top: 30px;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+ 
+}
+
+.hero-image {
+  height:100vh;
+}
+
+.hero-title {
+  font-size: 30pt;
+  padding-top: 10px;
+  padding-bottom: 100px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  /* color:black; */
+  width: 100;
+	color:rgb(34, 34, 74);
+}
+
+
+/* <-------- LISTINGS PAGE --------> */
+
+.listings-page-container {
+  margin: auto;
+}
+
+.listings-page-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+}
+
+.search-bar {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content:center; 
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.add-listing-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content:center; 
+  align-items: center;
+  flex-direction: column;
+}
+
+.add-listing-title {
+  width: 100%;
+  display: flex;
+  justify-content:center; 
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.add-listing-form {
+  box-sizing: border-box;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: hsl(0, 0%, 100%);
+  border: 4px solid hsl(0, 0%, 90%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.listings {
+  width: 100%;
+  height: auto;
+}
+
+.listings-title {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content:center; 
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.ind-listing {
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+  flex-direction: column;   
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+/* <------- SINGLE LISTING PAGE --------> */
+
+img {
+  max-width:100%;
+  padding-top: 10px;
+}
+
+.section-listing {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+  flex-direction: column;   
+  margin: auto;
+}
+
+.link-to-listings {
+  font-size: 12pt;
+  margin-top: 10px;
+}
+
+.listing-description {
+  font-size: 12pt;
+  margin-top: 10px;
+}
+
+.link-to-listings {
+  padding-top: 20px;
+}
+
+/* <------- ABOUT PAGE -------> */
+
+.about-container {
+  width: 100%;
+  height: auto;
+  margin:auto;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+}
+
+.about-details {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+}
+
+.about-title {
+  width: 100%;
+  height: 100px; 
+  margin: auto;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+}
+
+.about-bottom {
+  height: auto;
+  background-image: url("./images/housexchange.jpeg");
+  background-color: rgb(199, 231, 240);
+  margin: auto;
+}
+
+/*  <----- CONTACT PAGE -----> */
+
+.contact-container {
+  width: 100%;
+  height: 200px;
+  margin:auto;
+}
+
+.contact-title {
+  width: 100%;
+  height: 100px; 
+  margin: auto;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+}
+
+.form-container {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+  flex-direction: column;   
+
+}
+
+.contact-form {
+  box-sizing: border-box;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: hsl(0, 0%, 100%);
+  border: 4px solid hsl(0, 0%, 90%);
+  display: grid;
+  grid-template-columns: 1fr ;
+  gap: 1rem;
+
+} 
+
+@media only screen and (max-width: 768px){
+  .hero-section, .hero-container {
+    width: 100%;
+    height: 100vh;
+    /* margin: auto;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+  }
+
+  .hero-title {
+    /* display: flex; */
+    font-size: 30pt;
+  }
+
+  
+}
+
+@media only screen and (max-width: 568px){
+  .hero-section, .hero-container {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-title {
+    /* display: flex; */
+    font-size: 25pt;
+  }
+
+  nav {
+    display: flex;
+    /* justify-content:  space-around; */
+    align-items: center;
+    flex-direction: column;
+    min-height: 20vh;
+    background-color: rgb(34, 34, 74);
+    color: white;
+    text-decoration: none;
+    font-size: 15pt;
+  }
+  
+  .nav-links {
+    width: 50%;
+    display: flex;
+    /* justify-content: space-around; */
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    /* padding-left: 40px; */
+  }
+
+  .logo a{
+  color: rgb(199, 231, 240);
+  text-decoration: none;
+  font-size: 15pt;
+  }
+}  
