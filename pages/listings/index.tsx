@@ -1,7 +1,8 @@
-import { Listing, PrismaClient } from '@prisma/client';
-
-interface ListingProps { 
-  listings: Listing[];
+import { Listing, Image as DbImage, PrismaClient } from '@prisma/client';
+import Link from 'next/link';
+import Image from 'next/image'
+interface ListingProps {
+  listings: (Listing & { images: DbImage[] })[];
 }
 
 function Listings({ listings }: ListingProps) {
@@ -10,7 +11,12 @@ function Listings({ listings }: ListingProps) {
       <h1>Listings page</h1>
       <ul>
         {listings.map((listing) => (
-          <li key={listing.id}>{listing.name}</li> 
+          <section className="ind-listing" key={listing.id}>
+            <h3>{listing.name}</h3>
+            <Link href={`/listings/${listing.id}`}>click for more</Link>
+            <Image className="listing-img" src={`/${listing.images[0].path}`} alt="me" width="64" height="64" />
+
+          </section>
         ))}
       </ul>
     </>
@@ -19,7 +25,11 @@ function Listings({ listings }: ListingProps) {
 
 export async function getStaticProps() {
   const prisma = new PrismaClient();
-  const listings = await prisma.listing.findMany();
+  const listings = await prisma.listing.findMany({
+    include: {
+      images: true,
+    },
+  });
 
   return {
     props: { listings },

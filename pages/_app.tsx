@@ -1,9 +1,8 @@
-import '../styles/globals.css'
+import '../styles/main.css'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import Nav from '../components/Nav/Nav'
 
-import styles from '../styles/Home.module.css'
 
 
 
@@ -17,7 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <Nav />
     <Component {...pageProps} />
     
-    <footer className={styles.footer} />
+    <footer/>
   </>
 }
 
