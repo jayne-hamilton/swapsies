@@ -5,8 +5,9 @@ function Nav() {
   return (
     <nav>
       <h3 className="logo">
-        SWAPSIES test
+        SWAPSIES 
       </h3>
+      <div>
       <ul className="nav-links">
         <li>
           <Link href="/listings">LISTINGS</Link>
@@ -15,6 +16,7 @@ function Nav() {
           <Link href="/contact">CONTACT</Link>
         </li>
       </ul>
+      </div>
     </nav>
   )
 }

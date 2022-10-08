@@ -1,17 +1,29 @@
-function Listings() {
+import { Listing, PrismaClient } from '@prisma/client';
 
-  const ListingsItems = () => {
-    const [listingData, setListingData] = useState([])
-    getListings().then((d) => {
-      console.log(d)
-      setListingData(d)
-    })
-
-
-  return <h1>Listings page</h1>
-  
+interface ListingProps { 
+  listings: Listing[];
 }
 
+function Listings({ listings }: ListingProps) {
+  return (
+    <>
+      <h1>Listings page</h1>
+      <ul>
+        {listings.map((listing) => (
+          <li key={listing.id}>{listing.name}</li> 
+        ))}
+      </ul>
+    </>
+  );
+}
 
+export async function getStaticProps() {
+  const prisma = new PrismaClient();
+  const listings = await prisma.listing.findMany();
 
-export default Listings
+  return {
+    props: { listings },
+  };
+}
+
+export default Listings;

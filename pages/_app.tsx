@@ -14,8 +14,9 @@ function MyApp({ Component, pageProps }: AppProps) {
       <meta name="description" content="House swap app" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <Component {...pageProps} />
     <Nav />
+    <Component {...pageProps} />
+    
     <footer className={styles.footer} />
   </>
 }
