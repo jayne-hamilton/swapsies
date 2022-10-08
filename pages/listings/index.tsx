@@ -14,7 +14,7 @@ function Listings({ listings }: ListingProps) {
           <section className="ind-listing" key={listing.id}>
             <h3>{listing.name}</h3>
             <Link href={`/listings/${listing.id}`}>click for more</Link>
-            <Image className="listing-img" src={`/${listing.images[0].path}`} alt="me" width="64" height="64" />
+            <Image className="listing-img" src={`/${listing.images[0].path}`} alt="me" width="550" height="400" />
 
           </section>
         ))}
