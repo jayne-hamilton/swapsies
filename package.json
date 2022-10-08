@@ -7,14 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "knex": "knex --knexfile server/db/knexfile.js",
     "seed": "npx prisma db seed",
     "migrate:dev": "npx prisma migrate dev"
   },
   "dependencies": {
     "@next-auth/prisma-adapter": "^1.0.4",
     "@prisma/client": "^4.4.0",
-    "knex": "^2.3.0",
     "next": "12.3.1",
     "next-auth": "^4.12.3",
     "react": "18.2.0",
