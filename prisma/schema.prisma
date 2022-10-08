@@ -53,6 +53,17 @@ model VerificationToken {
 }
 
 model Listing {
-  id            String    @id @default(cuid())
+  id         String    @id @default(cuid())
+  name       String
+  location   String
+  images      Image[]
+  description String
+}
 
+model Image {
+  id         String    @id @default(cuid())
+  path       String
+  listingId  String
+
+  listing Listing @relation(fields: [listingId], references: [id], onDelete: Cascade)
 }
