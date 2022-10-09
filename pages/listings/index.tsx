@@ -15,7 +15,7 @@ function Listings({ listings }: ListingsProps) {
             <h3>{listing.name}</h3>
             <h4>{listing.location}</h4>
             <Link href={`/listings/${listing.id}`}>click for more</Link>
-            <Image className="listing-img" src={`/${listing.images[0].path}`} alt="me" width="550" height="400" />
+            <Image className="listing-img" src={`/${listing.images[0].path}`} alt="house images" width="550" height="400" />
 
           </section>
         ))}

@@ -4,8 +4,6 @@ import Head from 'next/head'
 import Nav from '../components/Nav/Nav'
 
 
-
-
 function MyApp({ Component, pageProps }: AppProps) {
   return <>
     <Head>
