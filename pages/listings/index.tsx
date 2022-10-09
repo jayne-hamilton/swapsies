@@ -8,7 +8,7 @@ interface ListingsProps {
 function Listings({ listings }: ListingsProps) {
   return (
     <>
-      <h1 className="listings-title" >Listings page</h1>
+      <h1 className="listings-title" >Current Listings</h1>
       <ul>
         {listings.map((listing) => (
           <section className="ind-listing" key={listing.id}>
