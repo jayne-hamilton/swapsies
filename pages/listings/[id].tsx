@@ -14,9 +14,9 @@ function ListingPage({ listing }: ListingProps) {
   return (
     <div>
       <h1>{listing.name}</h1>
-      {/* <p>The listing id {listing.id}</p> */}
-     <Image className="listing-img" src={`/${listing.images[0].path}`} alt="me" width="550" height="400" />
-
+      <h4>{listing.location}</h4>
+      <p>{listing.description} </p>
+      {listing.images.map((item,i)=> <Image src={`/${item.path}`} key={i} width="550" height="400" />)}
     </div>
   );
 
