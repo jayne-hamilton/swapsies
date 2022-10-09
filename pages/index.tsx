@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 
+
 const Home: NextPage = () => {
   return (
     <div>
@@ -10,8 +11,13 @@ const Home: NextPage = () => {
         <meta name="description" content="Swapsies app" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <h1>Home</h1>
+    <div>
+      <Image src={"/global.jpg"} alt="house images" width="700" height="700" />
+    </div>
+    <div>
+      <Image src={"/global.jpg"} alt="house images" width="700" height="700" />
+    </div>
+     
     </div>
   );
 };

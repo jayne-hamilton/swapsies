@@ -4,8 +4,8 @@ import Link from 'next/link'
 function Nav() {
   return (
     <nav>
-      <h3 className="logo">
-        SWAPSIES 
+      <h3 className="logo"> 
+        <Link href="/">SWAPSIES</Link>
       </h3>
       <div>
       <ul className="nav-links">
